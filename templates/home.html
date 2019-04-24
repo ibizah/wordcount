@@ -23,15 +23,18 @@
       <form  action="{% url 'count' %}">
         <label for="ta"> enter text</label>
         <br/>
-        <textarea name="fulltext" rows="8" cols="80"></textarea>
+        <textarea id='ta' name="fulltext" rows="8" cols="80"></textarea>
       </br>
       <input type="submit" name="" value="Count!">
         <br/>
-      Fullnmae: <input type="text" name="fname" value="" placeholder="fullName">
+        <label for="txt">Fullname:</label>
+    <input type="text" id="txt" name="fname" value="" placeholder="fullName">
         <br/>
-      Email :<input type="email" name="email" value="" placeholder="Email">
+        <label for="em">Email:</label>
+    <input type="email" name="email" value="" placeholder="Email">
         <br/>
-      Phone No.: <input type="text" name="pno" value="" placeholder="phone">
+        <label for="pn">Phone:</label>
+    <input type="text" name="pno" value="" placeholder="phone">
 
     <a href="{% url 'help' %}"><button type="button" name="button">register Courses  here</button></a>
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      h4
+      {
+        color: blue;
+        font-size: 12px;
+      }
+      h1,h2,h3,h4{
+        border: 2px solid pink;
+        border-radius: 5px;
+        text-align: center;
+        background-color: pink;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+
+    <h1>COUNT</h1>
+    <h3>there are {{count}} words</h3>
+    <h4>your text :</h4>
+    <h3>your name : {{fname}}</h3>
+    <h3>your email : {{email}}</h3>
+    <h3>your phone number : {{pno}}</h3>
+    <h4> {{string}}</h4>
+    <h4>word {{maxcount}} appears the most</h4>
+    {% for v,i in cnt %}
+    {{v}} - {{i}}
+    {% endfor %}
+    <a href="{% url 'home' %}">homepage</a>
+  </body>
+</html>

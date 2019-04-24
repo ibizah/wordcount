@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      textarea,input
+      {
+        border-radius: 12px;
+        border: 5px solid red;
+      }
+     button{
+       border: 2px solid green;
+       border-radius: 10px;
+     }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="form-group">
+      <h1>Word Count</h1>
+      <form  action="{% url 'count' %}">
+        <textarea name="fulltext" rows="8" cols="80"></textarea>
+      </br>
+      <input type="submit" name="" value="Count!">
+        <br/>
+      Fullnmae: <input type="text" name="fname" value="" placeholder="fullName">
+        <br/>
+      Email :<input type="email" name="email" value="" placeholder="Email">
+        <br/>
+      Phone No.: <input type="text" name="pno" value="" placeholder="phone">
+
+    <a href="{% url 'help' %}"><button type="button" name="button">register here</button></a>
+
+    </div>
+
+
+  </body>
+</html>

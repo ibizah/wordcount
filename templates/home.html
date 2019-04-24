@@ -21,6 +21,8 @@
     <div class="form-group">
       <h1>Word Count</h1>
       <form  action="{% url 'count' %}">
+        <label for="ta"> enter text</label>
+        <br/>
         <textarea name="fulltext" rows="8" cols="80"></textarea>
       </br>
       <input type="submit" name="" value="Count!">
